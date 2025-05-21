@@ -4,7 +4,7 @@
 
 <nav id="navbar" class="navbar">
   <div class="mobile">
-    <a href="/index.html" class="logo">
+    <a href="/index.html" class="logo mobile-logo">
       <img src="/img/logo.webp" alt="logo" />
     </a>
     <div class="menu_icon">
@@ -113,6 +113,7 @@
     transform: translateX(0);
     min-height: 100vh;
     padding: 20vh 0 0 0;
+    margin-top: -10rem;
   }
 
   .menu_links a {
@@ -169,6 +170,9 @@
 
   .menu_list {
     display: none;
+  }
+  body.menu-open .mobile-logo {
+    opacity: 0;
   }
 
   @media screen and (min-width: 800px) {
